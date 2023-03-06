@@ -25,7 +25,11 @@ function Navbar() {
         backgroundColor={colors.primary[400]}
         borderRadius={3}
       >
-        <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
+        <InputBase
+          sx={{ ml: 2, flex: 1 }}
+          placeholder="Search"
+          inputProps={{ "data-testid": "searchInput" }}
+        />
         <IconButton sx={{ p: 1 }}>
           <Search />
         </IconButton>
